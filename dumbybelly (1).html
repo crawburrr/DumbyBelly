@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090c">
+  <meta name="description" content="DUMBYBELLY — a cinematic archive of Zyzz, David Laid, and Jeff Seid.">
+  <title>DUMBYBELLY — The Aesthetic Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+<style>
+:root{--bg:#09090c;--panel:#101015;--line:#292930;--text:#f1f0f5;--muted:#898892;--purple:#a16cff;--blue:#6ab9ff;--silver:#cbd0dc;--font-head:"Barlow Condensed",Impact,sans-serif;--font-body:Inter,Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.noise{position:fixed;inset:0;z-index:10;pointer-events:none;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.65'/%3E%3C/svg%3E")}.topbar{height:76px;position:absolute;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #ffffff12}.wordmark{font-family:var(--font-head);font-size:25px;font-weight:900;letter-spacing:-.8px}.wordmark span{color:#96939f}.wordmark i{font:9px var(--font-body);vertical-align:top;margin-left:3px}.topbar nav{display:flex;gap:32px}.topbar nav a,.social-top,.eyebrow,.stage-label,.hero-index,.scroll-cue,.intro-strip,.card-number,.card-meta,.explore-btn,.model-note,.quote-footer,.compare-row,.fine-print,.about-bottom,.copyright,.footer-center{font-size:9px;letter-spacing:1.5px;font-weight:600}.topbar nav a{color:#b0aeb8;transition:color .2s}.topbar nav a:hover,.footer a:hover{color:white}.social-top{border:1px solid #44434c;padding:12px 14px}.social-top span{color:var(--purple);margin-left:14px}.menu-toggle{display:none;background:none;border:0;font-size:22px}.hero{min-height:760px;height:min(920px,100svh);position:relative;display:flex;align-items:center;overflow:hidden;padding:100px 5vw 65px;background:radial-gradient(ellipse at 73% 48%,#27202f 0,transparent 35%),linear-gradient(115deg,#09090c 35%,#101016 100%)}.hero-grid{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:80px 80px;mask-image:linear-gradient(90deg,transparent,#000 55%,#000)}.hero-copy{position:relative;z-index:5;width:49%;padding-bottom:20px}.eyebrow{color:#aaa7b3;display:flex;align-items:center;gap:10px}.live-dot{width:6px;height:6px;border-radius:50%;background:#a16cff;box-shadow:0 0 12px #a16cff}.hero h1,.section-heading h2,.about h2{font-family:var(--font-head);font-weight:900;letter-spacing:-1.5px;line-height:.82;margin:34px 0 25px;font-size:clamp(70px,10vw,148px)}.hero h1 span,.section-heading h2 span,.about h2 span{color:transparent;-webkit-text-stroke:1px #a9a5b5}.period{color:var(--purple)}.hero-sub{font-size:14px;line-height:1.8;color:#b6b3bf;margin:0 0 36px}.line-link{display:inline-flex;gap:28px;align-items:center;font-size:9px;letter-spacing:1.6px;font-weight:700;border-bottom:1px solid #5b5864;padding-bottom:13px}.line-link span{color:var(--purple);font-size:16px}.hero-stage{position:absolute;inset:90px 1% 40px 43%;overflow:hidden;perspective:700px}.hero-stage:before{content:"";position:absolute;width:70%;height:70%;left:18%;top:14%;background:radial-gradient(ellipse,#a16cff1c,transparent 68%);filter:blur(20px)}.orb{position:absolute;border:1px solid #ffffff13;border-radius:50%;transform:rotateX(68deg)}.orb-one{width:580px;height:580px;top:10%;left:18%}.orb-two{width:440px;height:440px;top:20%;left:29%;border-color:#a16cff38}.stage-label{position:absolute;z-index:5;color:#777481;font-size:8px}.label-top{top:7%;left:13%}.label-bottom{bottom:3%;right:8%}.hero-silhouette{position:absolute;bottom:10%;height:76%;width:29%;z-index:3;filter:drop-shadow(0 0 25px #000);animation:float 5s ease-in-out infinite}.hero-silhouette-left{left:9%;transform:scale(.78) rotateY(12deg);opacity:.65;filter:drop-shadow(0 0 30px #9a55ff2c)}.hero-silhouette-center{left:34%;height:88%;z-index:4;filter:drop-shadow(0 0 36px #a16cff36);animation-delay:-1.4s}.hero-silhouette-right{right:3%;transform:scale(.82) rotateY(-12deg);opacity:.74;filter:drop-shadow(0 0 25px #a9c7ff25);animation-delay:-2.2s}.person{position:absolute;inset:0;filter:contrast(1.1)}.person div{position:absolute;background:linear-gradient(100deg,#242329,#6a646b 45%,#29272f);border:1px solid #a9a2b515}.person .head{width:24%;height:15%;left:38%;top:2%;border-radius:43% 43% 38% 38%;background:linear-gradient(90deg,#352e31,#b58e79 50%,#59443d);clip-path:polygon(12% 0,85% 0,100% 35%,82% 84%,58% 100%,33% 93%,9% 67%,0 26%)}.person-zyzz .head{background:linear-gradient(90deg,#3c302b,#bd957b 50%,#5c4237)}.person-zyzz .head:after{content:"";position:absolute;top:-18%;left:4%;width:92%;height:38%;background:#171419;clip-path:polygon(0 100%,10% 15%,28% 40%,43% 0,59% 36%,78% 4%,100% 100%)}.person-laid .head{background:linear-gradient(90deg,#3b302c,#d2b19b 50%,#675046)}.person-laid .head:after{content:"";position:absolute;top:-6%;left:5%;width:90%;height:24%;background:#75604d;clip-path:polygon(0 100%,5% 10%,25% 0,50% 35%,75% 0,100% 35%,96% 100%)}.person-seid .head{background:linear-gradient(90deg,#44322a,#c7a084 50%,#60473a)}.person-seid .head:after{content:"";position:absolute;top:-10%;left:0;width:100%;height:34%;background:#765b42;clip-path:polygon(0 100%,8% 30%,24% 0,48% 20%,72% 0,100% 42%,90% 100%)}.person .neck{width:15%;height:10%;left:42.5%;top:14%;background:#9b7665}.person .torso{width:59%;height:34%;left:20.5%;top:20%;clip-path:polygon(25% 0,42% 0,50% 7%,58% 0,75% 0,100% 16%,88% 43%,79% 100%,22% 100%,13% 44%,0 16%);background:linear-gradient(90deg,#29272e,#8c7d7c 30%,#4a4249 50%,#a18b85 68%,#29262c)}.person .arm{top:23%;height:35%;width:20%;border-radius:45%;background:linear-gradient(90deg,#3b3335,#9b8176 55%,#393139)}.person .arm-left{left:7%;transform:rotate(9deg)}.person .arm-right{right:7%;transform:rotate(-9deg)}.person .shorts{width:58%;height:18%;left:21%;top:51%;background:linear-gradient(90deg,#19191e,#414047,#18181d);clip-path:polygon(0 0,100% 0,91% 100%,56% 100%,50% 20%,43% 100%,8% 100%)}.person .leg{top:65%;height:34%;width:24%;background:linear-gradient(90deg,#242229,#75645f 52%,#29252a);border-radius:28% 28% 10% 10%}.person .leg-left{left:23%;transform:rotate(2deg)}.person .leg-right{right:23%;transform:rotate(-2deg)}.person-zyzz .torso,.person-zyzz .arm,.person-zyzz .leg{filter:hue-rotate(-8deg)}.person-laid .torso,.person-laid .arm,.person-laid .leg{background-image:linear-gradient(90deg,#282b32,#87909a 45%,#363740)}.person-seid .torso,.person-seid .arm,.person-seid .leg{background-image:linear-gradient(90deg,#27272b,#a69b99 45%,#333037)}.stage-floor{position:absolute;bottom:8%;left:0;right:0;height:18%;background:linear-gradient(transparent,#aaa1c10a),repeating-linear-gradient(90deg,#ffffff10 0 1px,transparent 1px 70px);transform:perspective(160px) rotateX(35deg);border-top:1px solid #ffffff12}.stage-caption{position:absolute;bottom:7%;left:7%;right:7%;display:flex;justify-content:space-between;font:700 10px var(--font-head);letter-spacing:2px;color:#d0cbd9;z-index:6}.hero-index{position:absolute;bottom:28px;left:5vw;color:#777481}.hero-index span{margin-left:20px;color:#4f4d58}.scroll-cue{position:absolute;bottom:28px;right:5vw;display:flex;align-items:center;gap:10px;color:#777481}.scroll-cue span{display:block;width:24px;height:1px;background:var(--purple)}.intro-strip{height:62px;display:flex;align-items:center;justify-content:space-around;gap:15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:#777480;white-space:nowrap;overflow:hidden}.intro-strip b{color:var(--purple);font-size:13px}.section-pad{padding:125px 8vw}.section-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:55px}.section-heading h2,.about h2{font-size:clamp(55px,7vw,100px);margin:25px 0 0}.heading-note{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:5px}.legend-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.legend-card{background:linear-gradient(145deg,#15151b,#0e0e12);border:1px solid #25242d;padding:20px;position:relative;min-width:0;transition:transform .35s,border-color .35s}.legend-card:hover{transform:translateY(-7px);border-color:#55505f}.card-number{color:#666471;font-size:8px}.card-visual{height:290px;position:relative;overflow:hidden;margin:15px 0;background:radial-gradient(ellipse at 50% 40%,#50356a,#17141f 63%,#101015)}.visual-laid{background:radial-gradient(ellipse at 50% 40%,#23445c,#12171f 65%,#101015)}.visual-seid{background:radial-gradient(ellipse at 50% 40%,#55535e,#1b1b22 65%,#101015)}.ring{position:absolute;width:220px;height:220px;left:calc(50% - 110px);top:30px;border:1px solid #ffffff24;border-radius:50%;box-shadow:0 0 40px #ffffff05,inset 0 0 35px #ffffff08}.ring:before,.ring:after{content:"";position:absolute;inset:16px;border:1px dashed #ffffff21;border-radius:50%}.ring:after{inset:-16px;border-style:solid;opacity:.45}.mini-person{position:absolute;width:118px;height:245px;left:calc(50% - 59px);bottom:-3px;filter:drop-shadow(0 0 15px #000)}.mini-person i{position:absolute;left:43px;top:4px;width:34px;height:43px;border-radius:45%;background:linear-gradient(90deg,#60483f,#d0a58c,#624a41)}.mini-person b{position:absolute;left:23px;top:44px;width:74px;height:90px;background:linear-gradient(90deg,#3c3438,#c19a89 48%,#51434a);clip-path:polygon(22% 0,40% 0,50% 8%,60% 0,78% 0,100% 20%,85% 52%,76% 100%,25% 100%,15% 52%,0 20%)}.mini-person em{position:absolute;left:29px;top:128px;width:60px;height:115px;background:linear-gradient(90deg,#39353b,#8f7d79,#343038);clip-path:polygon(0 0,100% 0,85% 100%,57% 100%,50% 25%,42% 100%,15% 100%)}.mini-zyzz i:after{content:"";position:absolute;top:-8px;left:-3px;width:40px;height:18px;background:#171419;clip-path:polygon(0 100%,15% 0,40% 45%,58% 0,75% 45%,100% 5%,90% 100%)}.mini-laid b,.mini-laid em{background:linear-gradient(90deg,#3a414a,#b7a49a,#42444d)}.mini-seid b,.mini-seid em{background:linear-gradient(90deg,#48434a,#d0b4a0,#51434a)}.visual-stamp{position:absolute;right:14px;bottom:15px;font:800 18px/.85 var(--font-head);text-align:right;color:#ffffff3b}.card-meta{display:flex;justify-content:space-between;color:#777480;font-size:8px}.legend-card h3{font:900 clamp(27px,3.2vw,43px)/1 var(--font-head);margin:16px 0 10px;letter-spacing:.5px}.legend-card h3 span{font-size:12px;color:var(--purple);vertical-align:top}.card-desc{color:#9a97a2;font-size:11px;line-height:1.8;min-height:60px}.explore-btn{display:flex;justify-content:space-between;align-items:center;width:100%;background:none;border:0;border-top:1px solid #34323c;padding:17px 0 3px;margin-top:12px;text-align:left;cursor:pointer;font-size:8px}.explore-btn span{font-size:16px;color:var(--purple);transition:transform .2s}.explore-btn:hover span{transform:translate(3px,-3px)}.model-note{font-size:8px;color:#55535f;margin-top:20px;letter-spacing:1px}.quote-section{position:relative;overflow:hidden;background:#141019;border-top:1px solid #28202f;border-bottom:1px solid #28202f;padding:95px 10vw 60px;min-height:400px}.quote-mark{font:150px/.7 Georgia;color:var(--purple);opacity:.8}.quote-section>p{position:relative;z-index:2;font:900 clamp(38px,7vw,85px)/.92 var(--font-head);letter-spacing:-1px;margin:20px 0 55px}.quote-section>p span{color:transparent;-webkit-text-stroke:1px #a16cff}.quote-footer{display:flex;justify-content:space-between;color:#a09aa9;font-size:8px}.quote-footer span:last-child{color:var(--purple)}.quote-backdrop{position:absolute;right:-1%;bottom:-24%;font:900 32vw/.8 var(--font-head);color:#ffffff04;pointer-events:none}.comparison{background:#0c0c10}.compare-table{border-top:1px solid #37343e}.compare-row{display:grid;grid-template-columns:1fr 1.5fr 1.7fr 1fr;gap:20px;align-items:center;padding:22px 12px;border-bottom:1px solid #29272f;color:#aaa7b2;font-size:10px;letter-spacing:.2px;font-weight:500}.compare-head{color:#686572;font-size:8px;letter-spacing:1.3px;font-weight:700}.compare-name{font:800 25px var(--font-head);letter-spacing:.5px}.purple-text{color:#b28aff}.blue-text{color:#7bbfff}.silver-text{color:#cbd0dc}.fine-print{color:#666370;font-size:8px;letter-spacing:.4px;margin-top:18px}.about{background:#111116;border-top:1px solid #28272f}.about-content{display:grid;grid-template-columns:1.3fr 1fr;align-items:end;gap:50px}.about-content p{max-width:360px;color:#a5a2ad;font-size:13px;line-height:2;margin-bottom:8px}.about-bottom{display:flex;justify-content:space-between;border-top:1px solid #34323b;margin-top:65px;padding-top:18px;color:#686572;font-size:8px}.footer{padding:40px 5vw;display:flex;align-items:center;justify-content:space-between;gap:30px}.footer-mark{font-size:29px}.footer-center{text-align:center;color:#85818f;font-size:8px}.footer-center p{margin:0 0 14px}.footer-center div{display:flex;gap:25px;justify-content:center;color:#d0ccd8}.copyright{color:#686572;font-size:8px}.profile-panel{display:none;position:fixed;inset:0;z-index:50;background:#09090cf5;backdrop-filter:blur(18px);overflow:auto}.profile-panel.open{display:block;animation:fadeIn .3s ease}.profile-inner{max-width:1100px;margin:auto;padding:9vh 7vw 50px;min-height:100%}.close-profile{display:block;margin-left:auto;background:none;border:1px solid #45414d;padding:12px 15px;font-size:9px;letter-spacing:1.5px;cursor:pointer}.profile-layout{display:grid;grid-template-columns:1.3fr 1fr;gap:8vw;margin-top:7vh}.profile-layout h2{font:900 clamp(70px,13vw,160px)/.8 var(--font-head);margin:0 0 24px;letter-spacing:-2px}.profile-tag{font:700 13px var(--font-head);letter-spacing:2px;color:var(--purple);text-transform:uppercase}.profile-bio{font-size:13px;line-height:2;color:#aaa7b2;max-width:520px;margin-top:30px}.profile-facts{border-top:1px solid #36323d}.fact{padding:20px 0;border-bottom:1px solid #36323d}.fact strong{display:block;font:700 18px var(--font-head);letter-spacing:.7px;margin-bottom:8px}.fact span{color:#8b8793;font-size:11px;line-height:1.8}.profile-footer{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #36323d;margin-top:10vh;padding-top:22px;color:#74707e;font-size:9px;letter-spacing:1px}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -8px}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@media(min-width:1300px){.hero{padding-left:8vw}.hero-index{left:8vw}.scroll-cue{right:8vw}.hero h1{font-size:150px}}@media(max-width:900px){.topbar{padding:0 5vw}.topbar nav{gap:16px}.topbar nav a,.social-top{font-size:8px}.hero{min-height:730px;height:90svh}.hero-copy{width:54%}.hero h1{font-size:clamp(65px,10vw,100px)}.hero-stage{left:38%;right:-12%;opacity:.88}.hero-silhouette-left{left:5%}.hero-silhouette-center{left:31%}.hero-silhouette-right{right:0}.section-pad{padding:95px 5vw}.card-visual{height:230px}.legend-card{padding:14px}.card-desc{min-height:80px}.compare-row{grid-template-columns:.8fr 1.3fr 1.4fr 1fr;gap:12px;font-size:9px}}@media(max-width:640px){.topbar{height:65px}.wordmark{font-size:22px}.topbar nav,.social-top{display:none}.menu-toggle{display:block}.topbar nav.mobile-open{display:flex;position:absolute;top:65px;left:0;right:0;padding:22px 5vw;background:#101015;flex-direction:column;border-bottom:1px solid var(--line)}.hero{height:auto;min-height:780px;align-items:flex-start;padding:140px 6vw 60px}.hero-copy{width:100%;z-index:7}.hero h1{font-size:clamp(66px,17vw,105px);margin-top:28px}.hero-sub{font-size:12px}.hero-stage{inset:300px -17% 50px 7%;opacity:.7}.hero-silhouette{height:68%;width:28%}.hero-silhouette-center{height:78%}.hero-index{left:6vw;bottom:20px;font-size:7px}.hero-index span{display:none}.scroll-cue{right:6vw;bottom:20px;font-size:7px}.intro-strip{justify-content:flex-start;padding:0 20px;gap:18px;font-size:8px}.section-pad{padding:80px 6vw}.section-heading{display:block;margin-bottom:35px}.section-heading h2,.about h2{font-size:clamp(58px,14vw,85px)}.heading-note{margin-top:22px}.legend-grid{grid-template-columns:1fr;gap:20px}.legend-card{padding:18px}.card-visual{height:300px}.card-desc{min-height:0}.legend-card h3{font-size:42px}.model-note{line-height:1.8}.quote-section{padding:70px 7vw 45px;min-height:350px}.quote-section>p{font-size:clamp(39px,10vw,62px)}.quote-footer{gap:20px;line-height:1.7}.quote-footer span:last-child{text-align:right}.compare-row{grid-template-columns:1fr 1.5fr;gap:9px;padding:17px 5px;font-size:10px;line-height:1.6}.compare-row span:nth-child(3),.compare-row span:nth-child(4){padding-top:4px}.compare-head span:nth-child(3),.compare-head span:nth-child(4){display:none}.compare-head{grid-template-columns:1fr 1.5fr}.compare-name{font-size:23px}.about-content{grid-template-columns:1fr;gap:25px}.about-content p{font-size:12px}.about-bottom{flex-direction:column;gap:12px;margin-top:45px}.footer{padding:35px 6vw;flex-wrap:wrap}.footer-center{order:3;width:100%;text-align:left}.footer-center div{justify-content:flex-start}.copyright{margin-left:auto}.profile-inner{padding:6vh 6vw 35px}.profile-layout{grid-template-columns:1fr;gap:35px;margin-top:6vh}.profile-layout h2{font-size:clamp(66px,17vw,105px)}.profile-footer{margin-top:50px;gap:20px;font-size:8px}.profile-footer .line-link{gap:8px}.label-top{left:5%}.stage-caption{font-size:8px;letter-spacing:1px}.hero-stage{right:-24%}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+/* Real-time retro 3D stage */
+.hero-stage{transform:translateZ(0);transition:transform .12s ease-out}
+#threeCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;outline:none;touch-action:pan-y}
+.hero-stage .stage-caption{pointer-events:none;text-shadow:0 2px 10px #000}
+.hero-stage .label-top,.hero-stage .label-bottom{pointer-events:none}
+@media(max-width:640px){.hero-stage{inset:300px -17% 50px 7%;opacity:1}#threeCanvas{width:100%;height:100%}}
+
+</style></head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="DUMBYBELLY home">DUMBY<span>BELLY</span><i>®</i></a>
+    <nav>
+      <a href="#legends">THE LEGENDS</a>
+      <a href="#comparison">COMPARISON</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+    <a class="social-top" href="https://www.youtube.com/@dumbybelly" target="_blank" rel="noreferrer">FOLLOW THE ARCHIVE <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> DIGITAL FITNESS ARCHIVE / VOL. 001</p>
+        <h1>THE<br><span>AESTHETIC</span><br>ARCHIVE<span class="period">.</span></h1>
+        <p class="hero-sub">Three icons. Three physiques.<br>An era that never dies.</p>
+        <a class="line-link" href="#legends">ENTER THE ARCHIVE <span>↓</span></a>
+      </div>
+      <div class="hero-stage" id="heroStage">
+        <canvas id="threeCanvas" aria-label="Interactive low-poly 3D models inspired by retro PlayStation-era fitness game graphics"></canvas>
+        <div class="stage-label label-top">FIG. 001 — THE ICON</div>
+        <div class="stage-label label-bottom">DRAG TO ROTATE / SCROLL TO ZOOM</div>
+        <div class="stage-caption"><span>ZYZZ</span><span>DAVID LAID</span><span>JEFF SEID</span></div>
+      </div>
+      <div class="hero-index">DB—001 <span>EST. IN THE CULTURE</span></div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="intro-strip">
+      <span>BODYBUILDING</span><b>✳</b><span>INTERNET CULTURE</span><b>✳</b><span>AESTHETICS</span><b>✳</b><span>THE LEGACY</span>
+    </section>
+
+    <section class="legends section-pad" id="legends">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / THE SUBJECTS</p><h2>THREE DIFFERENT<br><span>LEGACIES.</span></h2></div>
+        <p class="heading-note">Not just physiques.<br>Entire eras of fitness culture.</p>
+      </div>
+      <div class="legend-grid">
+        <article class="legend-card zyzz-card" data-card="zyzz">
+          <div class="card-number">SUBJECT 001</div><div class="card-visual visual-zyzz"><div class="ring"></div><div class="mini-person mini-zyzz"><i></i><b></b><em></em></div><span class="visual-stamp">AESTHETIC<br>ERA</span></div>
+          <div class="card-meta"><span>1989 — 2011</span><span>THE ICON</span></div>
+          <h3>ZYZZ<span>†</span></h3><p class="card-desc">The internet's eternal aesthetic symbol. An attitude and an era that outlived him.</p>
+          <button class="explore-btn" data-open="zyzz">EXPLORE PROFILE <span>↗</span></button>
+        </article>
+        <article class="legend-card laid-card" data-card="laid">
+          <div class="card-number">SUBJECT 002</div><div class="card-visual visual-laid"><div class="ring"></div><div class="mini-person mini-laid"><i></i><b></b><em></em></div><span class="visual-stamp">BUILT BY<br>CONSISTENCY</span></div>
+          <div class="card-meta"><span>1998 —</span><span>THE TRANSFORMATION</span></div>
+          <h3>DAVID LAID</h3><p class="card-desc">A transformation that helped define a new generation of online fitness.</p>
+          <button class="explore-btn" data-open="laid">EXPLORE PROFILE <span>↗</span></button>
+        </article>
+        <article class="legend-card seid-card" data-card="seid">
+          <div class="card-number">SUBJECT 003</div><div class="card-visual visual-seid"><div class="ring"></div><div class="mini-person mini-seid"><i></i><b></b><em></em></div><span class="visual-stamp">CLASSIC<br>PHYSIQUE</span></div>
+          <div class="card-meta"><span>1994 —</span><span>THE MODEL</span></div>
+          <h3>JEFF SEID</h3><p class="card-desc">A polished, competition-ready look rooted in classic men's physique.</p>
+          <button class="explore-btn" data-open="seid">EXPLORE PROFILE <span>↗</span></button>
+        </article>
+      </div>
+      <p class="model-note">VISUAL STUDIES — stylized CSS character concepts, not photorealistic or anatomically accurate 3D scans.</p>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-mark">“</div>
+      <p>WE'RE ALL GONNA<br><span>MAKE IT, BRAH.</span></p>
+      <div class="quote-footer"><span>AZIZ “ZYZZ” SHAVERSHIAN</span><span>THE LEGACY CONTINUES ↗</span></div>
+      <div class="quote-backdrop">ZYZZ</div>
+    </section>
+
+    <section class="comparison section-pad" id="comparison">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / SIDE BY SIDE</p><h2>THREE BUILDS.<br><span>THREE ERAS.</span></h2></div>
+        <p class="heading-note">A quick look at their public personas<br>and signature aesthetics.</p>
+      </div>
+      <div class="compare-table">
+        <div class="compare-row compare-head"><span>SUBJECT</span><span>KNOWN FOR</span><span>VISUAL SIGNATURE</span><span>ERA</span></div>
+        <div class="compare-row"><span class="compare-name purple-text">ZYZZ</span><span>Internet fitness icon</span><span>Lean, broad-shouldered aesthetic</span><span>Late 2000s–2011</span></div>
+        <div class="compare-row"><span class="compare-name blue-text">DAVID LAID</span><span>Fitness creator & transformation</span><span>Tall, lean, balanced physique</span><span>2010s–present</span></div>
+        <div class="compare-row"><span class="compare-name silver-text">JEFF SEID</span><span>Men's physique & fitness modeling</span><span>Classic V-taper, stage-ready look</span><span>2010s–present</span></div>
+      </div>
+      <p class="fine-print">This is an editorial overview, not a ranking. Physical measurements are omitted where reliable sources vary.</p>
+    </section>
+
+    <section class="profile-panel" id="profilePanel" aria-hidden="true">
+      <div class="profile-inner">
+        <button class="close-profile" aria-label="Close profile">× CLOSE</button>
+        <p class="eyebrow" id="profileKicker">SUBJECT FILE</p>
+        <div class="profile-layout"><div><h2 id="profileName">ZYZZ</h2><p class="profile-tag" id="profileTag"></p><p class="profile-bio" id="profileBio"></p></div><div class="profile-facts" id="profileFacts"></div></div>
+        <div class="profile-footer"><span>DUMBYBELLY / SUBJECT FILE</span><a href="#legends" class="line-link">BACK TO ALL LEGENDS ↑</a></div>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <p class="eyebrow">03 / ABOUT THE ARCHIVE</p>
+      <div class="about-content"><h2>MORE THAN<br><span>THE PHYSIQUE.</span></h2><p>DUMBYBELLY is a digital archive exploring the people, imagery, and internet culture behind modern aesthetics. Three distinct paths. One lasting influence.</p></div>
+      <div class="about-bottom"><span>INDEPENDENT FAN PROJECT</span><span>NOT AFFILIATED WITH THE FEATURED INDIVIDUALS</span></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark footer-mark" href="#home">DUMBY<span>BELLY</span><i>®</i></a>
+    <div class="footer-center"><p>FITNESS. AESTHETICS. THE LEGENDS LIVE ON.</p><div><a href="https://www.tiktok.com/@dumbybelly" target="_blank" rel="noreferrer">TIKTOK ↗</a><a href="https://www.youtube.com/@dumbybelly" target="_blank" rel="noreferrer">YOUTUBE ↗</a></div></div>
+    <span class="copyright">© DUMBYBELLY</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>\n  \n  
+<script>
+const profiles = {
+  zyzz: {
+    name: "ZYZZ", kicker: "SUBJECT FILE / 001", tag: "The Aesthetic Icon",
+    bio: "Aziz Shavershian, known online as Zyzz, became one of the defining figures of early internet fitness culture. His transformation, confident persona, and memorable catchphrase inspired a generation of gym-goers. His influence continues through memes, edits, and the enduring aesthetic ideal.",
+    facts: [
+      ["AZIZ SHAVERSHIAN", "Born March 24, 1989 · Died August 5, 2011"],
+      ["KNOWN FOR", "Aesthetic bodybuilding and early online fitness culture"],
+      ["SIGNATURE LINE", "“We're all gonna make it, brah.”"],
+      ["THE ERA", "Late 2000s to 2011 — a defining era of internet fitness"]
+    ]
+  },
+  laid: {
+    name: "DAVID LAID", kicker: "SUBJECT FILE / 002", tag: "Built Through Consistency",
+    bio: "David Laid rose to prominence through transformation videos and fitness content documenting his development from a slim teenager into a widely recognized fitness personality. His online presence helped shape the visual language of modern gym culture, combining training, physique development, and fashion.",
+    facts: [
+      ["BORN", "January 29, 1998"],
+      ["KNOWN FOR", "Fitness YouTube, transformation videos, training, and fashion"],
+      ["SIGNATURE LOOK", "Tall frame, lean muscularity, and balanced proportions"],
+      ["THE ERA", "2010s to present — modern creator-led fitness culture"]
+    ]
+  },
+  seid: {
+    name: "JEFF SEID", kicker: "SUBJECT FILE / 003", tag: "The Classic Physique",
+    bio: "Jeff Seid is a fitness model and men's physique competitor known for his polished presentation and classic V-taper silhouette. His competition career and online fitness presence made him a recognizable figure in the physique-focused fitness scene of the 2010s.",
+    facts: [
+      ["BORN", "June 12, 1994"],
+      ["KNOWN FOR", "Men's physique competition and fitness modeling"],
+      ["SIGNATURE LOOK", "Broad shoulders, developed upper body, and a pronounced V-taper"],
+      ["THE ERA", "2010s to present — the polished men's physique aesthetic"]
+    ]
+  }
+};
+
+const panel = document.getElementById("profilePanel");
+const nameEl = document.getElementById("profileName");
+const kickerEl = document.getElementById("profileKicker");
+const tagEl = document.getElementById("profileTag");
+const bioEl = document.getElementById("profileBio");
+const factsEl = document.getElementById("profileFacts");
+
+function openProfile(key) {
+  const item = profiles[key];
+  if (!item) return;
+  nameEl.textContent = item.name;
+  kickerEl.textContent = item.kicker;
+  tagEl.textContent = item.tag;
+  bioEl.textContent = item.bio;
+  factsEl.replaceChildren();
+  item.facts.forEach(([title, text]) => {
+    const fact = document.createElement("div");
+    fact.className = "fact";
+    const strong = document.createElement("strong");
+    strong.textContent = title;
+    const span = document.createElement("span");
+    span.textContent = text;
+    fact.append(strong, span);
+    factsEl.append(fact);
+  });
+  panel.classList.add("open");
+  panel.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  document.querySelector(".close-profile").focus();
+}
+function closeProfile() {
+  panel.classList.remove("open");
+  panel.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+document.querySelectorAll("[data-open]").forEach(btn => btn.addEventListener("click", () => openProfile(btn.dataset.open)));
+document.querySelector(".close-profile").addEventListener("click", closeProfile);
+panel.addEventListener("click", event => { if (event.target === panel) closeProfile(); });
+document.addEventListener("keydown", event => { if (event.key === "Escape") closeProfile(); });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".topbar nav");
+menuToggle.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("mobile-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+  nav.classList.remove("mobile-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.textContent = "☰";
+}));
+
+// Gentle pointer parallax for the hero scene.
+const stage = document.querySelector(".hero-stage");
+if (stage && window.matchMedia("(pointer:fine)").matches && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  document.querySelector(".hero").addEventListener("pointermove", event => {
+    const rect = stage.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width - .5;
+    const y = (event.clientY - rect.top) / rect.height - .5;
+    stage.style.transform = `translate(${x * -10}px, ${y * -6}px)`;
+  });
+}
+
+</script><script>
+(() => {
+  const canvas = document.getElementById("threeCanvas");
+  const stage = document.getElementById("heroStage");
+  if (!canvas || !window.THREE) {
+    if (stage) stage.insertAdjacentHTML("beforeend", '<p style="position:absolute;inset:40% 10%;text-align:center;color:#aaa">3D scene unavailable in this browser.</p>');
+    return;
+  }
+
+  const THREE = window.THREE;
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x08080e);
+  scene.fog = new THREE.FogExp2(0x08080e, 0.035);
+
+  const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+  camera.position.set(0, 3.1, 13.8);
+  const renderer = new THREE.WebGLRenderer({canvas, antialias: false, alpha: false, powerPreference: "high-performance"});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.6));
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.BasicShadowMap;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
+
+  scene.add(new THREE.HemisphereLight(0x8798c9, 0x1c1425, 2.0));
+  const key = new THREE.DirectionalLight(0xffd8c1, 3.0); key.position.set(-4, 8, 7); scene.add(key);
+  const rimPurple = new THREE.PointLight(0x8a38ff, 28, 15); rimPurple.position.set(-5, 3, -1); scene.add(rimPurple);
+  const rimBlue = new THREE.PointLight(0x087dff, 24, 15); rimBlue.position.set(4, 3, -2); scene.add(rimBlue);
+  const fill = new THREE.PointLight(0xd8e4ff, 10, 18); fill.position.set(0, 5, 5); scene.add(fill);
+
+  const floorMat = new THREE.MeshStandardMaterial({color:0x12121a, roughness:.72, metalness:.45});
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(100,100), floorMat);
+  floor.rotation.x = -Math.PI/2; floor.position.y = -0.03; floor.receiveShadow = true; scene.add(floor);
+  const grid = new THREE.GridHelper(60, 55, 0x37304e, 0x242231); grid.position.y = 0.01; grid.material.transparent = true; grid.material.opacity = .4; scene.add(grid);
+
+  // Low-poly mesh helpers: the deliberately faceted shapes evoke a PS2-era character model.
+  const mat = (color, roughness=.82, metalness=.05) => new THREE.MeshStandardMaterial({color, roughness, metalness, flatShading:true});
+  const sphereGeo = new THREE.IcosahedronGeometry(1, 1);
+  function part(group, geometry, material, pos, scale, rot) {
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.position.set(...pos); mesh.scale.set(...scale);
+    if (rot) mesh.rotation.set(...rot);
+    mesh.castShadow = true; mesh.receiveShadow = true; group.add(mesh); return mesh;
+  }
+  function capsule(group, material, a, b, radiusA, radiusB, segments=7) {
+    const va = new THREE.Vector3(...a), vb = new THREE.Vector3(...b);
+    const dir = new THREE.Vector3().subVectors(vb, va);
+    const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radiusB, radiusA, dir.length(), segments, 1, false), material);
+    mesh.position.copy(va).add(vb).multiplyScalar(.5);
+    mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.normalize());
+    mesh.castShadow = true; mesh.receiveShadow = true; group.add(mesh);
+    part(group, new THREE.IcosahedronGeometry(radiusA,0), material, a, [1,1,1]);
+    part(group, new THREE.IcosahedronGeometry(radiusB,0), material, b, [1,1,1]);
+    return mesh;
+  }
+  function createLegend(config) {
+    const g = new THREE.Group();
+    const skin = mat(config.skin, .9);
+    const skinLight = mat(config.skinLight, .82);
+    const hair = mat(config.hair, 1);
+    const shorts = mat(config.shorts, .95);
+    const dark = mat(config.shoes, .9);
+    const accent = mat(config.accent, .45, .18);
+    // Feet and legs
+    part(g, new THREE.BoxGeometry(.44,.22,.72), dark, [-.25,.12,.12], [1,1,1], [0,.08,0]);
+    part(g, new THREE.BoxGeometry(.44,.22,.72), dark, [.25,.12,.12], [1,1,1], [0,-.08,0]);
+    capsule(g, skin, [-.25,.25,0], [-.27,1.0,0], .16,.19,7);
+    capsule(g, skinLight, [-.27,1.0,0], [-.23,1.82,0], .18,.23,7);
+    capsule(g, skin, [.25,.25,0], [.27,1.0,0], .16,.19,7);
+    capsule(g, skinLight, [.27,1.0,0], [.23,1.82,0], .18,.23,7);
+    part(g, new THREE.BoxGeometry(.76,.52,.46), shorts, [0,2.0,0], [1,1,1], [0,0,0]);
+    // Torso / V taper
+    part(g, new THREE.CylinderGeometry(.31,.52,.86,8,1), skin, [0,2.64,0], [1,1,1], [0,0,0]);
+    part(g, new THREE.IcosahedronGeometry(.62,1), skinLight, [0,3.12,0], [1.0,.42,.36]);
+    part(g, new THREE.IcosahedronGeometry(.25,1), skin, [-.25,3.04,.31], [1,.9,.55]);
+    part(g, new THREE.IcosahedronGeometry(.25,1), skin, [.25,3.04,.31], [1,.9,.55]);
+    // Abdominal plates, angular rather than realistic
+    for (let row=0; row<3; row++) for (let col=0; col<2; col++) {
+      part(g, new THREE.BoxGeometry(.18,.17,.045), skinLight, [col===0?-.115:.115,2.78-row*.19,.385], [1,1,1], [0,0,(col===0?-.04:.04)]);
+    }
+    // Shoulders, arms, forearms, hands
+    for (const side of [-1,1]) {
+      part(g, new THREE.IcosahedronGeometry(.29,1), skinLight, [side*.57,3.14,0], [1,.9,1]);
+      capsule(g, skin, [side*.62,3.05,0], [side*.76,2.56,.02], .19,.14,7);
+      capsule(g, skinLight, [side*.76,2.56,.02], [side*.79,2.02,.08], .14,.105,7);
+      part(g, sphereGeo, skin, [side*.79,1.91,.08], [.12,.16,.12]);
+    }
+    // Neck, head, ears, nose, brows
+    capsule(g, skin, [0,3.32,0], [0,3.57,0], .14,.13,7);
+    part(g, new THREE.IcosahedronGeometry(.29,1), skinLight, [0,3.82,.015], [.82,1.1,.8]);
+    part(g, new THREE.IcosahedronGeometry(.07,0), skin, [-.26,3.82,0], [1,1.3,.8]);
+    part(g, new THREE.IcosahedronGeometry(.07,0), skin, [.26,3.82,0], [1,1.3,.8]);
+    part(g, new THREE.ConeGeometry(.055,.15,5), skin, [0,3.79,.25], [1,1,1], [Math.PI/2,0,0]);
+    part(g, new THREE.IcosahedronGeometry(.30,1), hair, [0,4.03,-.035], [1.04,.55,.9]);
+    if (config.spikes) {
+      for (let i=0;i<7;i++) {
+        const spike = new THREE.Mesh(new THREE.ConeGeometry(.075,.28,4), hair);
+        spike.position.set((i-3)*.07,4.28+Math.abs(i-3)*-.015,-.015); spike.rotation.z=(i-3)*-.17; g.add(spike);
+      }
+    } else {
+      part(g, new THREE.IcosahedronGeometry(.20,0), hair, [-.11,4.15,-.03], [1.2,.35,.95], [0,0,.1]);
+    }
+    // Simple eyes, eyebrows, and a dark mouth for a stylized low-poly face
+    const eyeMat = new THREE.MeshBasicMaterial({color:0x17151a});
+    part(g, new THREE.BoxGeometry(.075,.025,.025), eyeMat, [-.105,3.87,.252], [1,1,1]);
+    part(g, new THREE.BoxGeometry(.075,.025,.025), eyeMat, [.105,3.87,.252], [1,1,1]);
+    part(g, new THREE.BoxGeometry(.13,.018,.025), mat(0x35241f), [0,3.68,.255], [1,1,1]);
+    // Tiny necklace
+    const chain = new THREE.Mesh(new THREE.TorusGeometry(.19,.018,4,12,Math.PI), accent);
+    chain.position.set(0,3.27,.18); chain.rotation.x=Math.PI; g.add(chain);
+    // Add subtle silhouette shoulder-width adjustments by legend.
+    g.scale.set(config.scaleX || 1, config.scaleY || 1, 1);
+    g.position.x = config.x;
+    g.userData.baseY = 0;
+    g.userData.spin = config.spin;
+    scene.add(g);
+    return g;
+  }
+  const legends = [
+    createLegend({x:-3.45, skin:0x8b5f4d, skinLight:0xb98468, hair:0x17151a, shorts:0x10121a, shoes:0x191922, accent:0xa56cff, spikes:true, scaleX:1.02, scaleY:.97, spin:-.17}),
+    createLegend({x:0, skin:0xa27f6d, skinLight:0xd0aa91, hair:0x6e5947, shorts:0x11141b, shoes:0x1b1c24, accent:0x51b9ff, scaleX:.94, scaleY:1.02, spin:.08}),
+    createLegend({x:3.45, skin:0xa47760, skinLight:0xcba184, hair:0x76563b, shorts:0x15151b, shoes:0x1b1b22, accent:0xd2d9e8, scaleX:1.05, scaleY:1, spin:.18})
+  ];
+
+  // Ruined columns and floating polygonal scenery
+  const stone = mat(0x292634,.95,.15);
+  for (const x of [-6.2,6.2]) {
+    const column = new THREE.Mesh(new THREE.CylinderGeometry(.35,.52,5,5,1), stone);
+    column.position.set(x,2.45,-1.5); column.rotation.z=x<0?.025:-.025; scene.add(column);
+    const cap = new THREE.Mesh(new THREE.BoxGeometry(1.1,.25,1.1), stone); cap.position.set(x,5,-1.5); scene.add(cap);
+  }
+  for (let i=0;i<18;i++) {
+    const rock = new THREE.Mesh(new THREE.IcosahedronGeometry(.15+Math.random()*.35,0), mat(i%2?0x292337:0x18263a,.9));
+    rock.position.set((Math.random()-.5)*15,Math.random()*3-1,(Math.random()-.5)*9-2);
+    rock.rotation.set(Math.random()*3,Math.random()*3,Math.random()*3); scene.add(rock);
+  }
+  const moon = new THREE.Mesh(new THREE.IcosahedronGeometry(1.2,1), new THREE.MeshBasicMaterial({color:0x23213a, wireframe:true, transparent:true, opacity:.45}));
+  moon.position.set(0,5.7,-5); scene.add(moon);
+
+  let pointerDown=false, lastX=0, drag=0, zoom=0;
+  canvas.addEventListener("pointerdown", e=>{pointerDown=true;lastX=e.clientX;canvas.setPointerCapture?.(e.pointerId);});
+  canvas.addEventListener("pointerup", ()=>pointerDown=false);
+  canvas.addEventListener("pointercancel", ()=>pointerDown=false);
+  canvas.addEventListener("pointermove", e=>{if(pointerDown){drag+=(e.clientX-lastX)*.008;lastX=e.clientX;}});
+  canvas.addEventListener("wheel", e=>{zoom=Math.max(-2.5,Math.min(3,zoom+e.deltaY*.003));},{passive:true});
+  let w=0,h=0;
+  function resize(){
+    const rect=stage.getBoundingClientRect(); w=Math.max(1,rect.width);h=Math.max(1,rect.height);
+    renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();
+    const mobile=window.innerWidth<640; camera.position.z=mobile?17.5:13.8;
+  }
+  window.addEventListener("resize",resize); resize();
+  const clock=new THREE.Clock();
+  function animate(){
+    requestAnimationFrame(animate);
+    const t=clock.getElapsedTime();
+    camera.position.z=(window.innerWidth<640?17.5:13.8)+zoom;
+    camera.lookAt(0,2.1,0);
+    legends.forEach((g,i)=>{
+      g.rotation.y = g.userData.spin + Math.sin(t*.42+i)*.055 + drag;
+      g.position.y = Math.sin(t*1.1+i*1.5)*.035;
+    });
+    moon.rotation.y=t*.035;
+    renderer.render(scene,camera);
+  }
+  animate();
+})();
+</script></body>
+</html>
